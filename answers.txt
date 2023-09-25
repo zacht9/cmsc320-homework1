@@ -1,0 +1,13 @@
+What is the difference between a merge and a rebase?
+
+Say we have a main branch and a feature branch in our repository. The feature branch split off from the main branch
+a while back, and since then, there have been updates to the main branch that it has not incorporated. A merge and a
+rebase would both incorporate these new updates into the feature branch, but they would do it in different ways. A
+merge would take all of the new updates and add them into the feature branch code, creating one new commit for this
+called a merge commit. In other words, this commit would merge the updated main branch code into the feature branch
+code. This commit would be added at the end of the feature branch, and the feature branch history would not be
+modified in any way besides this. A rebase, on the other hand, would take the new parts of the main branch and place
+them in between the old main branch code and the feature branch code. In this way, the feature branch history would
+be rewritten to appear linear, and it would appear as though the feature branch has a new base (the new parts of the
+main branch rather than the old part), hence the name. However, no new commits are created after the most recent
+feature branch commit.
